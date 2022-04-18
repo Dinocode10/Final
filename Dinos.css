@@ -33,7 +33,7 @@ bảng màu
     --text-board-: #5680E9;
     --text-color-:#8860D0;
 }
-/* home */
+/* ----------------------------------------------------home---------------------------------------------------- */
 #first{
     color: var(--text-font);
 }
@@ -45,36 +45,38 @@ bảng màu
     background-size: 400% 400%;
     animation: change 20s ease-in-out infinite;
     display: flex;
-    width: 100%;
-    height: 70px;
-    line-height: 70px;
+    width: 100vw;
+    height: 14vh;
+    line-height: 15vh;
     justify-content: space-between;
     position: fixed;
-    top: -10px;
+    top: -1vh;
     color: var(--text-font);
+    box-shadow: 0 2px 5px gray;
 }
 .logo{
-    font-size: 40px;
-    padding-left: 60px;
+    font-size: 4vw;
+    padding-left: 6vw;
     font-family: 'Pacifico', cursive;
     color: var(--text-font);
-    margin-bottom: 40px;
+    margin-bottom: 0vh;
 }
 .logo-img{
-    width: 90px;
-    margin-top: 20px;
+    width: 8vw;
+    margin-top: 1.5vw;
     position: fixed;
-    top: -20px;
-    left: -10px;
+    top: -3vh;
+    left: -1vw;
 }
 .menu{
     display: flex;
-    padding-right: 40px;
+    padding-right: 2vw;
     font-family: 'Inter', sans-serif;
     color: var(--text-font);
 }
 .menu li {
-    padding-left: 70px;
+    padding-left: 4vw;
+    font-size: 3vh;
 }
 .brand-vina{
     color: var(--text-brand);
@@ -89,12 +91,12 @@ bảng màu
     background:linear-gradient(45deg,#32adde, #C1C8E4, #8f60e5);
     background-size: 400% 400%;
     animation: change 10s ease-in-out infinite;
-    width: 150px; 
-    height: 150px;
-    line-height: 50px;
+    width: 13vw; 
+    height: 30vh;
+    line-height: 10vh;
     position: absolute;
-    top: 71px;
-    right: 135px;
+    top: 14.5vh;
+    right: 6.8vw;
     display: none;
     border-radius: 15px;
     color: var(--text-font);
@@ -103,6 +105,7 @@ bảng màu
     text-align: center;
     padding: 0;
     color: var(--text-font);
+    font-size: 3vh;
 }
 .index li a:hover{
     color: var(--text-hover);
@@ -119,54 +122,88 @@ div >ul>li {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
-/* Vinamilk  */
+
+/* ---------------------------------------------------- ảnh bìa động ----------------------------------------------------*/
+#slideshow {
+    overflow: hidden;
+    height: auto;
+    width: 90vw;
+    margin: 15vh auto;
+}
+.slide-wrapper {
+    width: 270vw;
+    -webkit-animation: slide 14s ease infinite;
+}
+
+.slide {
+    float: left;
+    height: auto;
+    width: 90vw;
+}
+.slide >img{
+    width: 100%;
+    border-top: 3px solid var(--text-font);
+    box-sizing: border-box;
+    border-bottom: 3px solid var(--text-font);
+}
+@-webkit-keyframes slide {
+    20% {margin-left: 0vw;}
+    30% {margin-left: -90vw;}
+    50% {margin-left: -90vw;}
+    60% {margin-left: -180vw;}
+    80% {margin-left: -180vw;}
+}
+  /* ----------------------------------------------------Vinamilk  ----------------------------------------------------*/
 #brand{
     color: var(--text-font);
 }
 .brand1{
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 10vh;
 }
 .vina-img{
-    margin-left: 100px;
+    margin-left: 8vw;
+    height: 80vh;
+    width: 80vw;
 }
 .vina-content{
-    margin: 50px 100px 0 50px;
+    margin: 5vh 8vw 0 5vh;
 }
 .brand-intro{
     color: var(--brand-content-);
     background-color: #32adde;
-    margin-right: 80px ;
+    margin-right: 7vw ;
     border: 2px solid rgba(11, 10, 105, .4);
     border-radius: 25% ;
-    height: 190px;
+    height: 35vh;
     font-family: 'Mali', cursive;   
+}
+.brand-intro>h2{
+    font-size: 9vh;
+    text-align: center;
+    margin-bottom: 1vh;
 }
 .brand-intro>p {
     text-align: justify;
     color: var(--brand-content-);
-    margin: 0 2%;
+    margin: 0 1vw;
     font-weight: 900;
-}
-.brand-intro>h2{
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 10px;
+    font-size: 3vh;
 }
 .brand-link {
     display: flex;
     justify-content: center;
-    padding-right: 14%;
+    padding-right: 6vw;
     font-family: 'Merriweather', serif;
 }
 .brand-link >p{
-    margin: 20px;
-    padding: 10px;
+    margin: 1vw;
+    padding: 0.7vw;
     display: inline-block;
-    Line-height: 6px;
-    font-size: 12px;
-    Letter-spacing: 5px;
+    Line-height: 0.4vw;
+    font-size: 2vh;
+    Letter-spacing: 1vh;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -181,137 +218,49 @@ div >ul>li {
     border-radius: 0 20px 0 20px;
     background-position: 100% 50%;
 }
-/* TH True Milk  */
+/* ----------------------------------------------------TH True Milk  ----------------------------------------------------*/
 .brand2{
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 10vh;
 }
 .th-img{
-    margin-right: 100px;
-    width: 430px;
+    margin-right: 8vw;
+    width: 80vh;
 }
 .th-content{
-    margin: 50px 0 0 100px;
+    margin: 4vw 0 0 10vh;
 }
-/* NutiFood */
+/* ----------------------------------------------------NutiFood ----------------------------------------------------*/
 .brand3{
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 10vh;
 }
 .nuti-img{
-    margin-left: 50px;
-    width: 440px;
+    margin-left: 8vw;
+    width: 33vw;
     height: auto;
 }
 .nuti-content{
-    margin: 50px 100px 0 50px;
+    margin: 4vh 7vw 0 4vh;
 }
-/* Tin Tức */
-.media{
-    background-color: var(--text-bg-);
-    color: var(--text-index-);
-    padding-bottom: 5%;
-}
-.media-title ,.new-title{
-    padding: 30px;
-    background-color: var(--text-bgtitle);
-    color: var(--text-index-);
-    font-family: 'Inter', sans-serif;
-}
-/* .media-title-new{
-    background-color: #5AB9EA;
-    padding: 5px 20px;
-    border-radius: 30px;
-    color: black;
-    margin-left: 45px;
-} */
-.media-new{
-    display: flex;
-    padding-left: 50px;
-}
-.media-col{
-    display: flex;
-    width: 33%;
-}
-.media-img{
-    width: 165px;
-    height: 105px;
-    border: black solid 1px;
-    box-sizing: border-box;
-    margin-top: 30px;
-}
-.media-con{
-    text-align: justify;
-    padding: 10px;
-    height: 105px;
-    box-sizing: border-box;
-    margin-top: 30px;
-}
-.media-con >h5{
-    margin-top: 20px;
-    text-align: center;
-}
-.media-con >h4 >a{
-    color: var(--brand-content-);
-    font-family: 'Dancing Script', cursive;
-}
-.media-con >h5 >a{
-    color: var(--text-bgtitle);
-    font-family: 'Merriweather', serif;
-}
-.media-support{
-    background: linear-gradient(50deg,#32adde, #C1C8E4, #8f60e5 );
-    margin-left: 8%;
-    padding: 40px 0px 20px 40px;
-    width: 35%;
-    border-radius: 20% 0 20% 20%;
-    text-align: justify;
-    margin-top: 10px;
-    height: 470px;
-}
-.fa-headset ,.fa-envelope-open{
-    font-size: 70px;
-    color: var(--text-color-);
-}
-.support-form{
-    width: 330px;
-    margin-top: 20px;
-    border: 2px solid var(--brand-content-);
-    font-family: 'Dancing Script', cursive;
-}
-.media-support >h1{
-    font-family: 'Inter', sans-serif;
-}
-.media-support >h1 >a, .media-support >h1{
-    color: #32adde;
-}
-.media-support >h2{
-    color: var(--text-border-);
-    font-family: 'Play', sans-serif;
-}
-.support-sub{
-    border: 2px solid var(--brand-content-);
-    margin-left: 165px;
-    font-family: 'Dancing Script', cursive;
-}
-/* Mới ra mắt */
+/* ----------------------------------------------------Mới ra mắt ----------------------------------------------------*/
 .new-product{
     display: flex;
     background-color:var(--text-bg-);
 }
 .new-img{
-    width: 80%;
-    height: 70%;
-    margin-left: 10%;
+    width: 16vw;
+    height: 39vh;
+    margin: 3vh 1.8vw;
 }
 .new-back >h3{
-    height: 50px;
+    height: 10vh;
     text-align: center;
-    font-size: 20px;
+    font-size: 4vh;
     font-weight: 400;
-    margin: 0 1%;
+    margin: 0 1vw;
     color: var(--brand-content-);
     border-top: 3px solid var(--text-border-);
     border-left: 3px solid var(--text-border-);
@@ -319,11 +268,11 @@ div >ul>li {
     border-radius: 30px 30px 0 0;
 }
 .new-back >h4{
-    height: 30px;
+    height: 6vh;
     text-align: center;
     font-weight: 100;
-    font-size: 20px;
-    margin: 0 1%;
+    font-size: 4vh;
+    margin: 0 1vw;
     color: var(--brand-content-);
     border-left: 3px solid var(--text-border-);
     border-right: 3px solid var(--text-border-);
@@ -348,10 +297,96 @@ div >ul>li {
 .new-back >h4:hover{
     color: #FFFFFF;
 }
-/* Cuối trang */
+/* Tin Tức */
+.media{
+    background-color: var(--text-bg-);
+    color: var(--text-index-);
+    padding-bottom: 1vh;
+}
+.media-title ,.new-title{
+    padding: 4vh;
+    background-color: var(--text-bgtitle);
+    color: var(--text-index-);
+    font-family: 'Inter', sans-serif;
+}
+.media-new{
+    display: flex;
+    padding-left: 4vw;
+}
+.media-col{
+    display: flex;
+    width: 33vw;
+}
+.media-img{
+    width: 15vw;
+    height: 20vh;
+    border: black solid 1px;
+    box-sizing: border-box;
+    margin-top: 8vh;
+}
+.media-con{
+    text-align: justify;
+    padding: 0.5vw;
+    height: 20vh;
+    box-sizing: border-box;
+    margin-top: 8.5vh;
+}
+.media-con >h5{
+    margin-top: 4vh;
+    text-align: center;
+}
+.media-con >h4 >a{
+    color: var(--brand-content-);
+    font-family: 'Dancing Script', cursive;
+    font-size: 3vh;
+    Line-height: 0.4vw;
+}
+.media-con >h5 >a{
+    color: var(--text-bgtitle);
+    font-family: 'Merriweather', serif;
+    font-size: 2.5vh;
+}
+.media-support{
+    background: linear-gradient(50deg,#32adde, #C1C8E4, #8f60e5 );
+    margin-left: 4vw;
+    padding: 8vh 1vw 2vh 3vw;
+    width: 35vw;
+    border-radius: 20% 0 20% 20%;
+    text-align: justify;
+    margin-top: 4vh;
+    height: 86vh;
+}
+.fa-headset ,.fa-envelope-open{
+    font-size: 13vh;
+    color: var(--text-color-);
+}
+.support-form{
+    width: 26vw;
+    margin-top: 3vh;
+    border: 2px solid var(--brand-content-);
+    font-family: 'Dancing Script', cursive;
+}
+.media-support >h1{
+    font-size: 7vh;
+    font-family: 'Inter', sans-serif;
+}
+.media-support >h1 >a, .media-support >h1{
+    color: #32adde;
+}
+.media-support >h2{
+    color: var(--text-border-);
+    font-family: 'Play', sans-serif;
+    font-size: 4.5vh;
+}
+.support-sub{
+    border: 2px solid var(--brand-content-);
+    margin-left: 13vw;
+    font-family: 'Dancing Script', cursive;
+}
+/* ----------------------------------------------------Cuối trang---------------------------------------------------- */
 .footer{
     background-color: var(--text-border-);
-    padding: 0 5% 0 5%;
+    padding: 0 5vw;
     background-color: var(--text-border-);
     color: var(--text-bg-);
 }
@@ -359,17 +394,18 @@ div >ul>li {
     display: flex;
 }
 .company-info{
-    width: 60%;
-    margin-top: 3%;
+    width: 55vw;
+    margin-top: 5vh;
     text-align: justify;
     font-family: 'Play', sans-serif;
+    font-size: 3vh;
 }
 .mxh{
-    margin-top: 10px;
+    margin-top: 2vh;
 }
 .MXH{
-    padding: 5px;
-    font-size: 30px;
+    padding: 1vh;
+    font-size: 5vh;
 }
 .fa-facebook{
     color: rgb(27, 81, 198);
@@ -396,36 +432,38 @@ div >ul>li {
     transition: ease .5s;
 }
 .company-rules{
-    width: 30%;
-    height: 150px;
-    margin-top: 3.5%;
-    margin-left: 15%;
-    margin-right: 5%;
+    width: 25vw;
+    height: 30vh;
+    margin-top: 6vh;
+    margin-left: 13vw;
+    margin-right: 5vw;
     font-family: 'Play', sans-serif;
+    font-size: 3vh;
 }
 .company-rules- >a{
     color: var(--text-bg-);
 }
 .company-hotline{
-    margin-top: 3.5%;
+    margin-top: 6vh;
     font-family: 'Play', sans-serif;
+    font-size: 3vh;
 }
 #icon-hotline{
     color: var(--text-bg-);
-    font-size: 15px;
-    margin: 10px 0;
+    font-size: 3vh;
+    margin: 2vh 0;
 }
 .company-rules >h4,.company-info >h4,.company-hotline >h4{
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 .company-info >h5 ,.company-hotline >h5{
-    line-height: 17px;
+    line-height: 2.5vh;
 }
 .company-rules-{
-    height: 20px;
+    height: 3vh;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 3vh;
 }
 .company-rules- >a:hover{
     color: var(--brand-content-);
@@ -433,40 +471,44 @@ div >ul>li {
 .dino{
     display: flex;
     font-family: 'Play', sans-serif;
+    font-size: 3vh;
 }
 .dino-law{
-    width: 70%;
-    margin-top: 4%;
+    width: 70vw;
+    margin-top: 4vh;
 }
 .dino-logo-img{
-    width: 200px;
+    width: 15vw;
     height: auto;
-    margin-left: 100px;
-    margin-top: 20px;
+    margin-left: 10vw;
+    margin-top: 3vh;
 }
-/* support */
+/* ----------------------------------------------------support ----------------------------------------------------*/
 .form{
     background-color: #c0cbff;
-    width: 40%;
-    margin-left: 5%;
-    margin-top: 10%;
+    width: 40vw;
+    height: 160vh;
+    margin-left: 5vw;
+    margin-top: 10vw;
     border-radius: 100px;
 }
 .contact{
     text-align: center;
-    margin: 3% 0;
+    margin: 3vh 0;
     color: var(--brand-content-);
-    font-size: 25px;
+    font-size: 5vh;
     font-family: 'Merriweather', serif;
     font-weight: 900;
 }
 .contact-wonder{
-    margin: 2% 4%;
+    margin: 2vh 4vh;
     color: var(--text-board-);
+    font-size: 3.5vh;
     font-family: 'Play', sans-serif;
+    text-align: justify;
 }
 legend{
-    font-size: 20px;
+    font-size: 4vh;
     text-align: center;
     font-family: 'Play', sans-serif;
 }
@@ -477,51 +519,56 @@ legend{
 }
 .form-text{
     background-color: #c0cbff;
-    padding: 10px 20px;
+    padding: 5vh 2vw;
     font-family: 'Dosis', sans-serif;
     font-weight: 800;
     border-radius: 0 0 100px 100px;
 }
 input{
     border-radius: 5px;
-    height: 30px;
-    padding: 0px 10px;
-    margin: 5px 10px 5px 5px;
-    color: black;  
+    height: 6vh;
+    padding: 0 1vw;
+    margin: 1vh 0vh 1vh 2vh;
+    color: var(--text-bgtitle);  
     font-family: 'Dosis', sans-serif; 
     border: 2px solid var(--text-board-);
     border-radius: 10px;
 }
 .a1{
-    width: 90%;
+    width: 32vw;
     border: 2px solid var(--text-board-);
     border-radius: 10px;
 }
 .a2{
-    height: 100px;
+    height: 20vh;
 }
 .a3{
     color: var(--text-border-);
+    font-size: 3vh;
     font-family: 'Merriweather', serif;
 }
 .text-form{
-    padding: 0 10px 0 10px;
+    padding: 0 1vw;
 }
 #support{
     border-radius: 8px;
     border: 2px solid var(--text-board-);
-    margin: 5px 10px 5px 5px;
+    margin: 2vh 10vw 2vh 1vw;
     color: var(--brand-content-);
-    padding: 0px 10px;
+    padding: 0px 3vw;
     font-family: 'Dosis', sans-serif;
+    font-size: 3vh;
+    font-weight: 800;
 }
 .option{
     color: gray;
     font-family: 'Dosis', sans-serif;
+    font-size: 3vh;
 }
 .text-content-send{
-    margin: 2% 5%;
+    margin: 2vh 3vw;
     text-align: center;
+    font-size: 3vh;
 }
 .highlight{
     color: var(--text-border-);
@@ -536,7 +583,7 @@ input{
     transition: .5s;
 }
 .form-submit{
-    margin-left: 45%;
+    margin-left: 16vw;
     font-family: 'Play', sans-serif;
 }
 .form-submit:hover{
@@ -544,21 +591,22 @@ input{
     background-color: var(--brand-content-);
     transition: .5s ease-in-out;
 }
-/* support  */
+/*---------------------------------------------------- support ---------------------------------------------------- */
 .support-content{
     display: flex;
 }
 .BMI{
-    width: 45%;
-    margin-left: 5%;
+    width: 45vw;
+    height: 166.5vh;
+    margin-left: 5vw;
     background-color: #c0cbff;
-    margin-top: 10%;
+    margin-top: 10vw;
     border-radius: 100px;
 }
 .BMI >h1{
-    font-size: 25px;
+    font-size: 5vh;
     text-align: center;
-    margin: 3% 0;
+    margin: 3vh 0;
     color: var(--brand-content-);
     font-family: 'Merriweather', serif;
     font-weight: 900;
@@ -567,21 +615,23 @@ input{
     margin: 2% 4%;
     color: var(--text-board-);
     font-family: 'Play', sans-serif;
+    font-size: 3.5vh;
+    text-align: justify;
 }
 .BMI >img{
-    width: 100%;
+    width: 45vw;
 }
 .BMI >input{
-    width: 70%;
-    margin: 2% 5%;
+    width: 30vw;
+    margin: 2vh 3vw;
 }
 .BMI >span{
-    font-size: 15px;
+    font-size: 3vh;
     font-family: 'Play', sans-serif;
 }
 .form-button{
-    padding: 1%;
-    margin: 2% 0 0 5%;
+    padding: 1vw;
+    margin: 2vh 0 0 3vw;
     border: 2px solid var(--text-board-);
     border-radius: 20px;
     color: var(--text-border-);
@@ -593,114 +643,116 @@ input{
     transition: .5s ease-in-out;
 }
 .BMI-form{
-    margin: 4%;
-    padding-bottom: 2%;
+    margin: 4vh;
+    padding-bottom: 2vh;
 }
 .BMI-title-{
-    font-size: 25px;
+    font-size: 4vh;
     color: var(--text-border-);
     font-family: 'Play', sans-serif;
 }
 .BMI-title >h4{
-    margin: 1% 7% ;
+    margin: 5vh 2vh ;
     border: 2px solid var(--text-board-);
     text-align: center;
-    font-size: 15px;
+    font-size: 3vh;
     color: var(--text-border-);
     font-family: 'Merriweather', serif;
 }
 .BMI-field{
     font-family: 'Cabin', sans-serif;
-    height: 270px;
+    height: 66vh;
     border-radius: 0 0 100px 100px;
     border: 2px solid var(--text-brand);
 }
 .BMI-who{
     display: flex;
-    width: 100%;
-    margin: 0 7%;
+    width: 40vw;
+    margin: 0 auto;
 }
 .who1 ,.who2 ,.who3{
     color: var(--text-bglogo);
-    width: 28.65%;
-    padding-bottom: 10px;
+    width: 25vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
     border: 2px solid var(--text-board-);
     box-sizing: border-box;
+    font-size: 3vh;
+    
 }
 .who1 >h5,.who2 >h5,.who3 >h5{
     text-align: center;
-    /* border-bottom: 2px solid black; */
-    height: 20%;
+    height: 5vh;
     font-family: 'Merriweather', serif;
+    border-bottom: 2px solid var(--text-board-);
 }
 .who1 >h6,.who2 >h6,.who3 >h6{
     text-align: center;
-    /* border-bottom: 2px solid black; */
-    padding: 2% 0;
+    padding: 0.5vh 0;
     font-weight: 400;
 }
-/* Vinamilk sản phẩm */
-.vinamilk{
-    margin-top: 7%;
-    margin-left: 3%;
+/* ----------------------------------------------------Vinamilk sản phẩm ----------------------------------------------------*/
+/* .vinamilk{
+    margin-top: 10vw;
+    margin-left: 100vh;
     font-size: 30px;
-}
+} */
 .vinamilk-box{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 10vw;
     font-family: 'Merriweather', serif;
 }
 .vinamilk-{
-    font-size: 50px;
+    font-size: 15vh;
     background-image: linear-gradient(45deg,rgb(65, 224, 65),rgb(243, 239, 239), rgb(94, 94, 233));
     background-size: 400% 400%;
     animation: change 5s ease-in-out infinite;
     color: white;
-    padding: 2%;
+    padding: 7vh;
     border-radius: 50%;
 }
-/* th  */
-.TH{
-    margin-top: 7%;
-    margin-left: 3%;
+/*---------------------------------------------------- th ---------------------------------------------------- */
+/* .TH{
+    margin-top: 10vh;
+
     font-size: 30px;
-}
+} */
 .TH-box{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 10vw;
     font-family: 'Merriweather', serif;
 }
 .TH-{
-    font-size: 50px;
+    font-size: 15vh;
     background-image: linear-gradient(135deg,rgb(203, 210, 203),rgb(133, 213, 248), rgb(94, 94, 233));
     background-size: 400% 400%;
     animation: change 5s ease-in-out infinite;
     color: rgb(204, 223, 233);
-    padding: 2%;
+    padding: 7vh;
     border-radius: 40px;
 }
-/* nuti  */
-.nuti{
+/*---------------------------------------------------- nuti  ----------------------------------------------------*/
+/* .nuti{
     margin-top: 7%;
     margin-left: 3%;
     font-size: 30px;
-}
+} */
 .nuti-box{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 10vw;
     font-family: 'Merriweather', serif;
 }
 .nuti-{
-    font-size: 50px;
+    font-size: 15vh;
     background-image: linear-gradient(35deg,rgb(79, 222, 79),rgb(180, 208, 220), rgb(97, 62, 32));
     color: rgb(8, 109, 38);
     background-size: 400% 400%;
     animation: change 5s ease-in-out infinite;
-    padding: 2%;
+    padding: 7vh;
     border-radius: 30%;
 }
 .product-box{
-    margin-top: 5%;
+    margin-top: 5vw;
     display: flex;
     justify-content: space-around;
 }
@@ -725,39 +777,43 @@ input{
     box-sizing: border-box;
 }
 .box-content >h3{
-    font-size: 20px;
+    font-size: 5vh;
     width: 100%;
-    height: 40px;
+    height: 13vh;
     text-align: center;
     font-family: 'Play', sans-serif;
     color: var(--text-font);
 }
 .box-content >p{
-    margin-top: 1%;
-    padding: 10px 0;
+    margin-top: 1vh;
+    padding: 2vh 0;
     text-align: center;
     font-family: 'Inter', sans-serif;
+    font-size: 3vh;
 }
 .box-feedback{
     padding: 5px 0;
     color: rgb(220, 220, 81);
     text-align: center;
+    font-size: 3.5vh ;
 }
 .box-feedback >span{
     color: black;
     font-style: italic;
+    font-size: 3.5vh;
     font-family: 'Merriweather', serif;
 }
 .box-pb{
     display: flex;
     justify-content: space-evenly;
-    padding: 5% 0;
+    padding: 2vh 0;
+    font-size: 3vh;
 }
 .box-price-{
     font-family: 'Merriweather', serif;
 }
 .box-buy{
-    padding: 3% 3% 0 ;
+    padding: 2vh 2vh 0 ;
     height: 30px;
     background-image: linear-gradient(45deg,#5680e9, #C1C8E4,#8860D0);
     border-radius: 10px;
@@ -771,75 +827,78 @@ input{
     border-radius: 35% 0;
     background-position: 100% 50%;
 }
-/* hover giá */
+/* ----------------------------------------------------hover giá ----------------------------------------------------*/
 .box-price1{
-    padding: 3%;
+    padding: 2vh;
 }
 .box-sale1{
     display: none;
     position: absolute;
-    left: 9%;
-    font-size: 20px;
+    left: 9vw;
     color: rgb(142, 18, 18);
     text-decoration: line-through;
+    font-size: 3vh;
+    font-family: 'Merriweather', serif;
 }
 .box-price1:hover .box-sale1{
     display: block;
 }
-/* 2 */
+/* ----------------------------------------------------2 ----------------------------------------------------*/
 .box-price2{
-    padding: 3%;
+    padding: 2vh;
 }
 .box-sale2{
     display: none;
     position: absolute;
-    left: 43%;
-    font-size: 20px;
+    left: 42vw;
     color: rgb(142, 18, 18);
     text-decoration: line-through;
+    font-size: 3vh;
+    font-family: 'Merriweather', serif;
 }
 .box-price2:hover .box-sale2{
     display: block;
 }
-/* 3 */
+/* ----------------------------------------------------3 ----------------------------------------------------*/
 .box-price3{
-    padding: 3%;
+    padding: 2vh;
 }
 .box-sale3{
     display: none;
     position: absolute;
-    left: 76%;
-    font-size: 20px;
+    left: 75vw;
     color: rgb(142, 18, 18);
     text-decoration: line-through;
+    font-size: 3vh;
+    font-family: 'Merriweather', serif;
 }
 .box-price3:hover .box-sale3{
     display: block;
 }
-/* -----  */
-/* order */
+/* ----------------------------------------------------order ----------------------------------------------------*/
 .order{
     display: flex;
-    margin-top: 80px;
+    margin-top: 10vw;
 }
 .order >img{
-    width: 400px;
-    margin-left: 5%;
+    width: 32vw;
+    margin-left: 5vw;
     border: 7px solid var(--text-font);
     box-sizing: border-box;
 }
 .order-name{
-    margin-left: 5%;
-    width: 35%;
+    margin-left: 5vw;
+    width: 33vw;
 }
 .order-name >h3{
-    font-size: 30px;  
+    font-size: 6vh;  
     color: var(--text-font); 
     font-family: 'Play', sans-serif;
 }    
 .order-sold{
     display: flex;
-    margin: 3% 0 2% 0;
+    margin: 7vh 0 2vh 0;
+    font-size: 3vh;
 }
 .order-sold >p{
     font-family: 'Inter', sans-serif;
@@ -855,56 +914,57 @@ input{
 }
 .order-price{
     display: flex;
-    margin-top: 3%;
+    margin-top: 2vh;
     align-items: center;
     font-family: 'Merriweather', serif;
 }
 .order-price >h3{
     color: rgb(189, 41, 41);
-    margin-right: 3%;
-    font-size: 30px;
-    margin-left: 2%;
+    margin-right: 3vw;
+    font-size: 7vh;
+    margin-left: 1vw;
 }
 .order-price >h4{
-    font-size: 20px
+    font-size: 4vh;
 }
 .order-price >h5{
     color: var(--text-border-);
     text-decoration: line-through;
+    font-size: 2.5vh;
 }
 .order-intro{
-    margin-top: 5%;
+    margin-top: 3vw;
     display: flex;
-    font-size: 20px;
+    font-size: 4vh;
     justify-content: space-between;
-    width: 100%;
+    width: 33vw;
     border: 2px solid var(--text-brand);
     border-radius: 5%;
     box-sizing: border-box;
     font-family: 'Play', sans-serif;
 }
 .order-introx >h5{
-    margin: 7%;
-    width: 200px;
+    margin: 1.5vw;
+    width: 15vw;
 }
 .order-introy >h5{
-    margin: 7% 7% 7% 0;
-    width: 200px;
+    margin: 1.5vw;
+    width: 12vw;
     font-weight: 100;
 }
 .order-buy{
     display: block;
-    margin-left: 8%;
-    margin-top: 5%;
+    margin-left: 7vw;
+    margin-top: 13vh;
 }
 .order-buy >button{
-    padding: 25px 26px;
-    font-size: 20px;
+    padding: 5vh 2.5vw;
+    font-size: 4vh;
     font-weight: 700;
     color: var(--text-font);
     box-sizing: border-box;
     border-radius: 30px;
-    margin-bottom: 40%;
+    margin-bottom: 11vh;
     border: 2px solid var(--text-brand);
     box-sizing: border-box;
     background-image: linear-gradient(135deg, #fbc2eb, #a6c1ee);
@@ -913,13 +973,13 @@ input{
     font-family: 'Play', sans-serif;
 }
 .order-click{
-    padding: 35px 30px;
+    padding: 7vh 2.5vw;
     box-sizing: border-box;
     border: 2px solid var(--text-brand);
     font-weight: 700;
     color: var(--text-font);
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 4vh;
     background-image: linear-gradient(45deg, #fbc2eb, #a6c1ee);
     background-size: 400% 400%;
     animation: change 10s ease-in-out infinite;
@@ -936,34 +996,37 @@ input{
     box-shadow: 10px 10px 30px var(--text-color-);
 }
 .order-des{
-    margin: 5% 40% 10% 5%;
+    margin: 10vh 30vw 10vh 5vw;
 }
 .order-des >h2{
     color: var(--text-font);
-    margin: 3% 0;
-    width: 200px;
+    margin: 5vh 0;
+    width: 20vw;
+    padding: 1vh;
     text-align: center;
     border-radius: 10px;
     border: 2px solid;
     font-family: 'Merriweather', serif;
+    font-size: 5vh;
 }
 .order-des >p{
     font-family: 'Inter', sans-serif;
     text-align: justify;
+    font-size: 3vh;
 }
-/* Hóa đơn */
+/* ----------------------------------------------------Hóa đơn---------------------------------------------------- */
 .bill{
-    margin: 10% 25% 20%;
-    width: 50%;
+    margin: 10vw auto 10vw;
+    width: 50vw;
     height: auto;
     border-radius: 10px;
     background-image: linear-gradient(120deg, #fad0c4, #ffd1ff);
     background-size: 400% 400%;
     animation: change 10s ease-in-out infinite;
-    padding: 2%;
+    padding: 5vh;
 }
 .bill-field >legend{
-    font-size: 30px;
+    font-size: 5vh;
     color: var(--text-bgtitle);
     font-weight: 700;
 }
@@ -972,62 +1035,68 @@ input{
     border-radius: 10px;
 }
 .bill-field >input{
-    margin: 3%;
+    margin: 1.5vw;
+    font-size: 4vh;
 }
 .bill-legend{
     font-family: 'Play', sans-serif;
 }
 .bill1{
-    padding: 1%;
-    width: 40%;
-    margin: 0.5%;
-    border: 4px solid var(--text-bgtitle);
+    padding: 1vh;
+    width: 20vw;
+    margin: 1vh;
+    border: 1vh solid var(--text-bgtitle);
     font-family: 'Play', sans-serif;
-}.bill-field >p{
-    margin: 4% 5% 2% 5% ;
-    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+}
+.bill-field >p{
+    margin: 4vh 5vw 1vh 3vw ;
+    font-family: 'Play', sans-serif;
+    font-size: 4vh;
 }
 #part, #parts, #full{
-    margin-top: 3%;
-    margin-bottom: 10px;
-    font-family: 'Merriweather', serif;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-family: 'Play', sans-serif;
 }
 .times{
     font-family: 'Merriweather', serif;
+    font-size: 3vh;
 }
 input[type=radio]{
     border: 0px;
-    width: 10%;
+    width: 3vw;
     height: 1em;
     font-family: 'Merriweather', serif;
 }
-.bill-field >p{
+.bill-field >p >i{
     font-family: 'Dancing Script', cursive;
 }
 .bill-field >span >button{
-    padding: 2%;
+    padding: 2vh;
     color: var(--text-border-);
     background-image: linear-gradient(30deg, #accbee, #e7f0fd);
     animation: change 3s ease-in-out infinite;
     border-radius: 10px;
     border: 2px solid var(--text-brand);
-    margin-bottom: 3%;
-    margin: 2% 40%;
+    margin-bottom: 3vh;
+    margin: 2vh 21vw;
     transition: all ease 1s;
     background-size: 400% 400%;
     background-position: 0 0;
     font-family: 'Play', sans-serif;
+    font-size: 2vw;
 }
 .bill-field >span >button:hover{
     border-radius: 50%;
     transition: .4s all ease-in-out;
     background-position: 100% 50%;
 }
-/* ---------------------------------------Về chúng tôi------------ */
+/* ----------------------------------------------------Về chúng tôi---------------------------------------------------- */
 .we-brand{
-    margin: 10% 0 5%;
+    margin: 10vw 0 5vw;
     text-align: center;
-    font-size: 400%;
+    font-size: 20vh;
     font-family: 'Pacifico', cursive;
     background: -webkit-linear-gradient(135deg,#fccb90, #d57eeb);
     -webkit-background-clip: text;
@@ -1035,28 +1104,27 @@ input[type=radio]{
 }
 .we{
     display: flex;
-    margin-top: 1%;
-    margin-bottom: 4%;
+    margin-bottom: 4vh;
 }
 .we >hr{
-    width: 20px;
+    width: 3vw;
     background-image: linear-gradient(45deg,#ff9897, #f650a0);
     border: none;
     background-size: 100% 100%;
     animation: change 5s ease-in-out infinite; 
 }
 .we-l{
-    margin: 3% 5% 0;
+    margin: 3vh 5vw 0;
     width: 100%;
     text-align: right;
 }
 .we-l >span{
-    margin: 2% 3%;
+    margin: 2vh 3vw;
     padding: 10px;
     display: inline-block;
-    Line-height: 6px;
-    font-size: 12px;
-    Letter-spacing: 5px;
+    Line-height: 1vh;
+    font-size: 3vh;
+    Letter-spacing: 1vh;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -1075,12 +1143,12 @@ input[type=radio]{
     font-family: 'Merriweather', serif;
 }
 .we-r >span{
-    margin: 2% 3%;
+    margin: 2vh 3vw;
     padding: 10px;
     display: inline-block;
-    Line-height: 6px;
-    font-size: 12px;
-    Letter-spacing: 5px;
+    Line-height: 1vh;
+    font-size: 3vh;
+    Letter-spacing: 1vh;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -1096,11 +1164,11 @@ input[type=radio]{
     background-position: 100% 50%;
 }
 .we-r{
-    margin: 2% 5%;
+    margin: 2vh 5vw;
     width: 100%;
 }
 .we-l >p,.we-r >p{
-    padding: 3%;
+    padding: 3vh;
     text-align: justify;
     color: var(--text-border-);
     border: 2px solid var(--text-font);
@@ -1108,15 +1176,16 @@ input[type=radio]{
     background-image: linear-gradient(70deg,#74ebd5, #ACB6E5);
     background-size: 400% 400%;
     animation: change 10s ease-in-out infinite;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     font-family: 'Play', sans-serif;
+    font-size: 3vh;
 }
 .we-left.left2{
-    margin-top: 15%;
+    margin-top: 15vh;
 }
 .we-right.right2{
-    margin-top: 22%;
+    margin-top: 22vh;
 }
 .we-r >img{
     width: 60%;
@@ -1128,11 +1197,11 @@ input[type=radio]{
     border: 2px solid var(--text-font);
     border-radius: 10px;
 }
-/* --------------------------------------------------member---------- */
+/* ----------------------------------------------------member---------------------------------------------------- */
 .mem{
-    padding: 1%;
-    height: 100px;
-    margin: 10% 6% 5%;
+    padding: 2vh;
+    height: 5vh;
+    margin: 10vh 6vw 5vh;
     border: 2px solid var(--text-font);
     border-radius: 15px;
     background-image: linear-gradient(45deg,#f869d5, #5650de);
@@ -1141,6 +1210,7 @@ input[type=radio]{
     transition: all ease 1s;
     background-position: 0 0;
     color: var(--text-font);
+    font-size: 4vh;
     font-family: 'Merriweather', serif;
 }
 .mem:hover{
@@ -1150,12 +1220,12 @@ input[type=radio]{
 }
 .member{
     display: flex;
-    margin: 3%;
+    margin: 5vh;
 }
 .people{
     background-image: linear-gradient(45deg,#ff6cab,#7366ff);
     max-width: 33%;
-    margin: 0 3%;
+    margin: 0 3vw;
     border-radius: 20px;
     background-size: 400% 400%;
     animation: change 3s ease-in-out infinite;
@@ -1177,19 +1247,22 @@ input[type=radio]{
 .people >h2, .people >h3{
     color: var(--text-font);
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 3vh;
 }
 .people >h2{
     font-family: 'Play', sans-serif;
+    font-size: 8vh;
     color: #47ecd0;
 }
 .people >h3{
     font-family: 'Dancing Script', cursive;
     color: var(--text-bg-);
+    font-size: 4vh;
 }
 .own{
-    margin: 0 38% ;
+    margin: 0 auto 2vh ;
     text-align: center;
+    font-size: 5vh;
 }
 .fa-tiktok{
     color: #ffffff;
